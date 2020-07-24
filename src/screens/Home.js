@@ -1,20 +1,39 @@
-import React, { useState } from "react"
+import React from "react"
 import "../styles/Home.css"
-import { categories } from "../api/builtins"
-import Category from "../components/Category"
-import Phrase from "../components/Phrase"
+import { phrases } from "../api/builtins"
+import speak from "../utils/speak"
+import debounce from "../utils/debounce"
 
 function Home() {
-  const [selectedCategoryIndex, setSelectedCategoryIndex] = useState(0)
-  const selectedCategory = categories[selectedCategoryIndex]
+  const debouncedSpeak = debounce(phrase => {
+    speak(phrase)
+  }, 900)
 
   return (
     <div className="Home">
-      <div className="Sidebar">
-        {categories.map((c, i) => <Category category={c} setSelectedCategoryIndex={setSelectedCategoryIndex} index={i} />)}
+      <div className="Main">
+        {phrases.map(group => (
+          <div className="Column">
+            {group.map(phrase => (
+              <div className="Cell">
+                <div
+                  className="Card"
+                  onClick={e => {
+                    e.preventDefault()
+                    debouncedSpeak(phrase)
+                  }}
+                  onContextMenu={e => {
+                    e.preventDefault()
+                    debouncedSpeak(phrase)
+                  }}
+                >
+                  {phrase}
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
       </div>
-
-      <div className="Main">{selectedCategory.phrases.map(p => <Phrase phrase={p} />)}</div>
     </div>
   )
 }

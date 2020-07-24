@@ -1,18 +1,11 @@
-const categories = [
-  {
-    label: "General",
-    phrases: ["Food.", "Water.", "Medicines.", "Bathroom."]
-  },
-  {
-    label: "Food",
-    phrases: ["Too hot.", "Sample Phrase."]
-  },
-  {
-    label: "Travel",
-    phrases: ["Farm.", "A.N."]
-  }
+const phrases = [
+  ["Call", "Maya", "Murugan", "Kamal", "Bijay", "Subhash", "Samson"],
+  ["Pinky", "Sushila", "Sunder", "Tikaram", "Call Dubey", "Sunshine", "Duke"],
+  ["Wash Room", "Sleep", "Massage", "Stop", "Biscuit", "Dolly", "Billy"],
+  ["Bicycle", "Pain", "Shave", "Want Haircut", "Itching", "I don't agree", "I agree"],
+  ["Hey", "What's up", "How's it going", "Come here", "Tell me more", "Give it to me", "What's the news"]
 ]
 
 module.exports = {
-  categories
+  phrases
 }
