@@ -4,3 +4,97 @@
   overflow: hidden;
   box-sizing: border-box;
 }
+
+.dark-text {
+  color: var(--text-dark);
+}
+
+.light-text {
+  color: var(--text-light);
+}
+
+.border-green-400 {
+  border: solid 4px var(--green-400);
+}
+
+.border-blue-400 {
+  border: solid 4px var(--blue-400);
+}
+
+.border-purple-400 {
+  border: solid 4px var(--purple-400);
+}
+
+.border-yellow-400 {
+  border: solid 4px var(--yellow-400);
+}
+
+.border-red-400 {
+  border: solid 4px var(--red-400);
+}
+
+.hover-green-400:hover {
+  background: var(--green-400) !important;
+}
+
+.hover-blue-400:hover {
+  background: var(--blue-400) !important;
+  color: var(--text-light) !important;
+}
+
+.hover-purple-400:hover {
+  background: var(--purple-400) !important;
+  color: var(--text-light) !important;
+}
+
+.hover-yellow-400:hover {
+  background: var(--yellow-400) !important;
+}
+
+.hover-red-400:hover {
+  background: var(--red-400) !important;
+  color: var(--text-light);
+}
+
+.background-green-100 {
+  background: var(--green-100) !important;
+}
+
+.background-blue-100 {
+  background: var(--blue-100);
+}
+
+.background-purple-100 {
+  background: var(--purple-100) !important;
+}
+
+.background-yellow-100 {
+  background: var(--yellow-100) !important;
+}
+
+.background-red-100 {
+  background: var(--red-100) !important;
+}
+
+.background-green-400 {
+  background: var(--green-400);
+}
+
+.background-blue-400 {
+  background: var(--blue-400);
+  color: var(--text-light);
+}
+
+.background-purple-400 {
+  background: var(--purple-400);
+  color: var(--text-light);
+}
+
+.background-yellow-400 {
+  background: var(--yellow-400);
+}
+
+.background-red-400 {
+  background: var(--red-400);
+  color: var(--text-light);
+}

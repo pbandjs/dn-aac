@@ -15,6 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.3vw;
 }
 
 #root {
@@ -22,15 +23,45 @@ body {
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
+  --green-100: #eefbf3;
+  --green-400: #96e6b3;
+  --green-800: #39d070;
+
+  --red-100: #f5ccd2;
+  --red-400: #da3e52;
+  --red-800: #891a29;
+
+  --yellow-100: #f9f6b3;
+  --yellow-400: #f2e94e;
+  --yellow-800: #e4d911;
+
+  --blue-100: #d6efff;
+  --blue-400: #0093f5;
+  --blue-800: #00568f;
+
+  --purple-100: #f5f3f6;
+  --purple-400: #7e6b8f;
+  --purple-800: #52465d;
+
+  --text-light: #ffffff;
+  --text-dark: #000000;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Helvetica";
   src: url("/Helvetica-Bold.ttf");
   font-weight: 800;
   font-style: normal;
-}
+} */
+
+/* @font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/Inter-SemiBold.woff2") format("woff2"), url("/Inter-SemiBold.woff") format("woff");
+} */
