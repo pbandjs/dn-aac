@@ -48,26 +48,36 @@ const groups = [
         class: "border-green-400 background-green-100 hover-green-400 ",
         phrases: [
           { phrase: "MAYA", class: "" },
-          { phrase: "MURUGAN", class: "", pronounce: "Mooroogan" },
-          { phrase: "KAMAL", class: "" },
-          { phrase: "BIJAY", class: "", pronounce: "Bejay" }
-        ]
-      },
-      {
-        class: "border-green-400 background-green-100 hover-green-400",
-        phrases: [
-          { phrase: "SUBHASH", class: "", pronounce: "Subhash" },
-          { phrase: "SAMSON", class: "" },
-          { phrase: "PINKY", class: "" },
-          { phrase: "SUSHILA", class: "", pronounce: "Sosheela" }
+          { phrase: "MANJU", class: "", pronounce: "Muhnjew" },
+          { phrase: "RAMNI", class: "", pronounce: "Rum-knee" },
+          { phrase: "LALIT", class: "", pronounce: "Lahlith" }
         ]
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
         phrases: [
-          { phrase: "DUBEY", class: "", pronounce: "Dubay" },
           { phrase: "SUNDER", class: "" },
+          { phrase: "MURUGAN", class: "", pronounce: "Mooroogan" },
+          { phrase: "KAMAL", class: "" },
+          { phrase: "BJ", class: "", pronounce: "Bejay" }
+        ]
+      },
+      {
+        class: "border-yellow-400 background-yellow-100 hover-yellow-400",
+        phrases: [
+          { phrase: "SUBHASH", class: "", pronounce: "Subhash" },
+          { phrase: "PINKY", class: "" },
+          { phrase: "SUSHILA", class: "", pronounce: "Sosheela" },
+          { phrase: "DUBEY", class: "border-purple-400 background-purple-100 hover-purple-400", pronounce: "Dubay" }
+        ]
+      },
+      {
+        class: "border-purple-400 background-purple-100 hover-purple-400",
+        phrases: [
+          { phrase: "SAMSON", class: "border-purple-400 background-purple-100 hover-purple-400" },
+          { phrase: "KISHORI", class: "", pronounce: "Kishohri" },
           { phrase: "TIKARAM", class: "", pronounce: "Tikaram" },
+
           { phrase: "DUKE", class: "border-red-400 background-red-100 hover-red-400" }
         ]
       },
@@ -84,25 +94,21 @@ const groups = [
     phraseGroups: [
       {
         class: "border-green-400 background-green-100 hover-green-400",
-        phrases: [
-          { phrase: "HEY", class: "" },
-          { phrase: "YES", class: "" },
-          { phrase: "WHAT'S NEW?", class: "" },
-          { phrase: "HOW ARE YOU?", class: "" }
-        ]
+        phrases: [{ phrase: "HEY", class: "" }, { phrase: "WHAT'S UP?", class: "" }, { phrase: "HOW ARE YOU?", class: "" }]
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
         phrases: [
+          { phrase: "WHAT'S THE NEWS?", class: "" },
           { phrase: "HOW'S FAMILY?", class: "" },
           { phrase: "HOW'S WORK?", class: "" },
-          { phrase: "HOW'S SCHOOL?", class: "" },
-          { phrase: "HOW'S THE WEATHER?", class: "" }
+          { phrase: "HOW'S SCHOOL?", class: "" }
         ]
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
         phrases: [
+          { phrase: "HOW'S THE WEATHER?", class: "" },
           { phrase: "LET'S SIT OUTSIDE", class: "" },
           { phrase: "WHAT WOULD YOU LIKE TO HAVE?", class: "" },
           { phrase: "THE TREE IS IN BLOOM", class: "" }
@@ -111,10 +117,9 @@ const groups = [
       {
         class: "border-red-400 background-red-100 hover-red-400",
         phrases: [
-          { phrase: "BYE", class: "", pronounce: "Bye" },
-          { phrase: "SEE YOU", class: "" },
-          { phrase: "TAKE CARE", class: "" },
-          { phrase: "COME AGAIN", class: "" }
+          { phrase: "BYE, TAKE CARE", class: "", pronounce: "Bye, Take Care" },
+          { phrase: "COME AGAIN", class: "" },
+          { phrase: "GOOD NIGHT", class: "" }
         ]
       }
     ]
@@ -127,28 +132,105 @@ const groups = [
       {
         class: "border-green-400 background-green-100 hover-green-400",
         phrases: [
-          { phrase: "HAPPY", class: "", icon: "😀" },
-          { phrase: "GOOD", class: "", icon: "🙂" },
+          { phrase: "I'M HAPPY", class: "", icon: "😀" },
+          { phrase: "I'M GOOD", class: "", icon: "🙂" },
           { phrase: "COOL", class: "", icon: "😎" },
-          { phrase: "EXCITED", class: "", icon: "😄" }
+          { phrase: "I'M EXCITED", class: "", icon: "😄" },
+          { phrase: "I'M FINE", icon: "🙂", class: "" }
         ]
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
         phrases: [
-          { phrase: "HUNGRY", class: "", icon: "🍽️" },
-          { phrase: "PAIN", class: "", icon: "🤕" },
-          { phrase: "TIRED", class: "", icon: "😫" },
-          { phrase: "SLEEPY", class: "", icon: "😴" }
+          { phrase: "I'M HUNGRY", class: "", icon: "🍽️" },
+          { phrase: "I'M IN PAIN", class: "", icon: "🤕" },
+          { phrase: "I'M TIRED", class: "", icon: "😫" },
+          { phrase: "I'M SLEEPY", class: "", icon: "😴" },
+          { phrase: "I'M ITCHY", class: "", icon: "🖐️" }
         ]
       },
       {
         class: "border-red-400 background-red-100 hover-red-400",
         phrases: [
-          { phrase: "ANGRY", class: "", icon: "😠" },
-          { phrase: "SAD", class: "", icon: "😔", pronounce: "Sad" },
-          { phrase: "CONFUSED", class: "", icon: "😕" },
-          { phrase: "ANNOYED", class: "", icon: "😒" }
+          { phrase: "I'M ANGRY", class: "", icon: "😠" },
+          { phrase: "I'M SAD", class: "", icon: "😔", pronounce: "I'm Sad" },
+          { phrase: "I'M CONFUSED", class: "", icon: "😕" },
+          { phrase: "I'M FRUSTRATED", class: "", icon: "😒" }
+        ]
+      }
+    ]
+  },
+  {
+    name: "ALPHABETS",
+    mode: "compose",
+    tabClass: "dark-text border-blue-400 background-blue-100 hover-blue-400",
+    selectedClass: "background-blue-400",
+    phraseGroups: [
+      {
+        class: "border-green-400 background-green-100 hover-green-400",
+        phrases: [
+          { phrase: "A", class: "" },
+          { phrase: "B", class: "" },
+          { phrase: "C", class: "" },
+          { phrase: "D", class: "" },
+          { phrase: "E", class: "" },
+          { phrase: "F", class: "" }
+        ]
+      },
+      {
+        class: "border-green-400 background-green-100 hover-green-400",
+        phrases: [
+          { phrase: "G", class: "" },
+          { phrase: "H", class: "" },
+          { phrase: "I", class: "" },
+          { phrase: "J", class: "" },
+          { phrase: "K", class: "" },
+          { phrase: "L", class: "" }
+        ]
+      },
+      {
+        class: "border-green-400 background-green-100 hover-green-400",
+        phrases: [
+          { phrase: "M", class: "" },
+          { phrase: "N", class: "" },
+          { phrase: "O", class: "" },
+          { phrase: "P", class: "" },
+          { phrase: "Q", class: "" },
+          { phrase: "R", class: "" }
+        ]
+      },
+      {
+        class: "border-green-400 background-green-100 hover-green-400",
+        phrases: [
+          { phrase: "S", class: "" },
+          { phrase: "T", class: "" },
+          { phrase: "U", class: "" },
+          { phrase: "V", class: "" },
+          { phrase: "W", class: "" },
+          { phrase: "X", class: "" }
+        ]
+      },
+      {
+        class: "border-green-400 background-green-100 hover-green-400",
+        phrases: [
+          { phrase: "Y", class: "" },
+          { phrase: "Z", class: "" },
+          { phrase: ",", class: "" },
+          {
+            phrase: "SPACE",
+            value: phrase => {
+              return phrase + " "
+            },
+            class: ""
+          },
+          { phrase: "", class: "", isDummy: true },
+          {
+            phrase: "BACKSPACE",
+            value: phrase => {
+              return phrase.slice(0, phrase.length - 1)
+            },
+            class: ""
+          }
         ]
       }
     ]

@@ -65,6 +65,88 @@
   flex-wrap: wrap;
 }
 
+/* .Home .Main. {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+} */
+
+.Home .Main .composed-phrase {
+  /* width: 100%; */
+  flex: 1;
+  padding-left: 16px;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-align-items: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.Home .Main .composed-phrase input {
+  height: 100%;
+  font-size: 3vw;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.Home .Main .speak-composed {
+  /* width: 100%; */
+  width: 16.667%;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.Home .Main .speak-composed .speak-composed-button {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  border: solid 4px #8899a6;
+  border-radius: 4px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.Home .Main .speak-composed .speak-composed-button:hover {
+  cursor: pointer;
+  background: #dee1e4;
+}
+
+.Home .Main .speak-composed .emoji {
+  height: 2.5vw;
+}
+
+.Home .Main .clear-composed {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-align-items: center;
+  align-items: center;
+  padding-left: 16px;
+  margin-right: 16px;
+}
+
+.Home .Main .clear-composed .emoji {
+  height: 2vw;
+}
+
+.Home .Main .clear-composed:hover {
+  cursor: pointer;
+}
+
 /* .Home .Main .Column {
   box-sizing: border-box;
   padding-top: 16px;
@@ -158,4 +240,10 @@
 .Home .Main .Row .Cell .Card:hover {
   cursor: pointer;
   /* background: whitesmoke; */
+}
+
+.Home .Main .Row .Cell .Card.dummy {
+  pointer-events: none;
+  background: transparent !important;
+  border: none;
 }
