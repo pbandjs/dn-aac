@@ -95,6 +95,10 @@ function HomeAltOne() {
                   onClick={e => {
                     debouncedSpeak(composed.toLowerCase())
                   }}
+                  onContextMenu={e => {
+                    e.preventDefault()
+                    debouncedSpeak(composed.toLowerCase())
+                  }}
                 >
                   <Twemoji options={{ className: "emoji" }}>
                     <span>🔊</span>
