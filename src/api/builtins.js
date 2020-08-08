@@ -38,6 +38,8 @@
 //   ["Hey", "What's up", "How's it going", "Come here", "Tell me more", "Give it to me", "What's the news"]
 // ]
 
+// a comment
+
 const groups = [
   {
     name: "CALL",
