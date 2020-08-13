@@ -1,3 +1,5 @@
+import speak from "../utils/speak"
+import debounce from "lodash.debounce"
 // const colors = {
 //   blue: {
 //     "100": "#99D6FF",
@@ -47,43 +49,247 @@ const groups = [
       {
         class: "border-green-400 background-green-100 hover-green-400 ",
         phrases: [
-          { phrase: "MAYA", class: "" },
-          { phrase: "MANJU", class: "", pronounce: "Muhnjew" },
-          { phrase: "RAMNI", class: "", pronounce: "Rum-knee" },
-          { phrase: "LALIT", class: "", pronounce: "Lahlith" }
+          {
+            phrase: "MAYA",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Call Maya")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "MANJU",
+            class: "",
+            pronounce: "Muhnjew",
+            speak: debounce(
+              () => {
+                speak("Call Muhnjew")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "RAMNI",
+            class: "",
+            pronounce: "Rum-knee",
+            speak: debounce(
+              () => {
+                speak("Call Rumknee")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "LALIT",
+            class: "",
+            pronounce: "Lahlith",
+            speak: debounce(
+              () => {
+                speak("Call Lahlith")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
         phrases: [
-          { phrase: "SUNDER", class: "" },
-          { phrase: "MURUGAN", class: "", pronounce: "Mooroogan" },
-          { phrase: "KAMAL", class: "" },
-          { phrase: "BJ", class: "", pronounce: "Bejay" }
+          {
+            phrase: "SUNDER",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Call Sunder")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "MURUGAN",
+            class: "",
+            pronounce: "Mooroogan",
+            speak: debounce(
+              () => {
+                speak("Call Moorugan")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "KAMAL",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Call Kamal")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "BJ",
+            class: "",
+            pronounce: "Bejay",
+            speak: debounce(
+              () => {
+                speak("Call BJ")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
         phrases: [
-          { phrase: "SUBHASH", class: "", pronounce: "Subhash" },
-          { phrase: "PINKY", class: "" },
-          { phrase: "SUSHILA", class: "", pronounce: "Sosheela" },
-          { phrase: "DUBEY", class: "border-purple-400 background-purple-100 hover-purple-400", pronounce: "Dubay" }
+          {
+            phrase: "SUBHASH",
+            class: "",
+            pronounce: "Subhash",
+            speak: debounce(
+              () => {
+                speak("Call Subhash")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "PINKY",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Call Pinky")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "SUSHILA",
+            class: "",
+            pronounce: "Sosheela",
+            speak: debounce(
+              () => {
+                speak("Call Sosheela")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "DUBEY",
+            class: "border-purple-400 background-purple-100 hover-purple-400",
+            pronounce: "Dubay",
+            speak: debounce(
+              () => {
+                speak("Call Dubay")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-purple-400 background-purple-100 hover-purple-400",
         phrases: [
-          { phrase: "SAMSON", class: "border-purple-400 background-purple-100 hover-purple-400" },
-          { phrase: "KISHORI", class: "", pronounce: "Kishohri" },
-          { phrase: "TIKARAM", class: "", pronounce: "Tikaram" },
+          {
+            phrase: "SAMSON",
+            class: "border-purple-400 background-purple-100 hover-purple-400",
+            speak: debounce(
+              () => {
+                speak("Call Samson")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "KISHORI",
+            class: "",
+            pronounce: "Kishohri",
+            speak: debounce(
+              () => {
+                speak("Call Kishohri")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "TIKARAM",
+            class: "",
+            pronounce: "Tikaram",
+            speak: debounce(
+              () => {
+                speak("Call Tikaram")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
 
-          { phrase: "DUKE", class: "border-red-400 background-red-100 hover-red-400" }
+          {
+            phrase: "DUKE",
+            class: "border-red-400 background-red-100 hover-red-400",
+            speak: debounce(
+              () => {
+                speak("Call Duke")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-red-400 background-red-100 hover-red-400",
-        phrases: [{ phrase: "SUNSHINE", class: "" }, { phrase: "DOLLY", class: "" }, { phrase: "BILLY", class: "" }]
+        phrases: [
+          {
+            phrase: "SUNSHINE",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Call Sunshine")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "DOLLY",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Call Dolly")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "BILLY",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Call Billy")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
+        ]
       }
     ]
   },
@@ -94,32 +300,177 @@ const groups = [
     phraseGroups: [
       {
         class: "border-green-400 background-green-100 hover-green-400",
-        phrases: [{ phrase: "HEY", class: "" }, { phrase: "WHAT'S UP?", class: "" }, { phrase: "HOW ARE YOU?", class: "" }]
+        phrases: [
+          {
+            phrase: "HEY",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Hey")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "WHAT'S UP?",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("What's up?")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "HOW ARE YOU?",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("How are you?")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
+        ]
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
         phrases: [
-          { phrase: "WHAT'S THE NEWS?", class: "" },
-          { phrase: "HOW'S FAMILY?", class: "" },
-          { phrase: "HOW'S WORK?", class: "" },
-          { phrase: "HOW'S SCHOOL?", class: "" }
+          {
+            phrase: "WHAT'S THE NEWS?",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("What's the news?")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "HOW'S FAMILY?",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("How's family?")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "HOW'S WORK?",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("How's work?")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "HOW'S SCHOOL?",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("How's school?")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
         phrases: [
-          { phrase: "HOW'S THE WEATHER?", class: "" },
-          { phrase: "LET'S SIT OUTSIDE", class: "" },
-          { phrase: "WHAT WOULD YOU LIKE TO HAVE?", class: "" },
-          { phrase: "THE TREE IS IN BLOOM", class: "" }
+          {
+            phrase: "HOW'S THE WEATHER?",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("How's the weather?")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "LET'S SIT OUTSIDE",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Let's sit outside")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "WHAT WOULD YOU LIKE TO HAVE?",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("What would you like to have?")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "THE TREE IS IN BLOOM",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("The tree is in bloom")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-red-400 background-red-100 hover-red-400",
         phrases: [
-          { phrase: "BYE, TAKE CARE", class: "", pronounce: "Bye, Take Care" },
-          { phrase: "COME AGAIN", class: "" },
-          { phrase: "GOOD NIGHT", class: "" }
+          {
+            phrase: "BYE, TAKE CARE",
+            class: "",
+            pronounce: "Bye, Take Care",
+            speak: debounce(
+              () => {
+                speak("Bye, take care")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "COME AGAIN",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Come Again")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "GOOD NIGHT",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("Good Night")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       }
     ]
@@ -132,30 +483,185 @@ const groups = [
       {
         class: "border-green-400 background-green-100 hover-green-400",
         phrases: [
-          { phrase: "I'M HAPPY", class: "", icon: "😀" },
-          { phrase: "I'M GOOD", class: "", icon: "🙂" },
-          { phrase: "COOL", class: "", icon: "😎" },
-          { phrase: "I'M EXCITED", class: "", icon: "😄" },
-          { phrase: "I'M FINE", icon: "🙂", class: "" }
+          {
+            phrase: "HAPPY",
+            class: "",
+            icon: "😀",
+            speak: debounce(
+              () => {
+                speak("I'm happy")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "GOOD",
+            class: "",
+            icon: "🙂",
+            speak: debounce(
+              () => {
+                speak("I'm good")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "COOL",
+            class: "",
+            icon: "😎",
+            speak: debounce(
+              () => {
+                speak("Cool")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "EXCITED",
+            class: "",
+            icon: "😄",
+            speak: debounce(
+              () => {
+                speak("I'm excited")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "FINE",
+            icon: "🙂",
+            class: "",
+            speak: debounce(
+              () => {
+                speak("I'm fine")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
         phrases: [
-          { phrase: "I'M HUNGRY", class: "", icon: "🍽️" },
-          { phrase: "I'M IN PAIN", class: "", icon: "🤕" },
-          { phrase: "I'M TIRED", class: "", icon: "😫" },
-          { phrase: "I'M SLEEPY", class: "", icon: "😴" },
-          { phrase: "I'M ITCHY", class: "", icon: "🖐️" }
+          {
+            phrase: "HUNGRY",
+            class: "",
+            icon: "🍽️",
+            speak: debounce(
+              () => {
+                speak("I'm hungry")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "PAIN",
+            class: "",
+            icon: "🤕",
+            speak: debounce(
+              () => {
+                speak("I'm in pain")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "TIRED",
+            class: "",
+            icon: "😫",
+            speak: debounce(
+              () => {
+                speak("I'm tired")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "SLEEPY",
+            class: "",
+            icon: "😴",
+            speak: debounce(
+              () => {
+                speak("I'm sleepy")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "ITCHY",
+            class: "",
+            icon: "🖐️",
+            speak: debounce(
+              () => {
+                speak("I'm itchy")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-red-400 background-red-100 hover-red-400",
         phrases: [
-          { phrase: "I'M ANGRY", class: "", icon: "😠" },
-          { phrase: "I'M SAD", class: "", icon: "😔", pronounce: "I'm Sad" },
-          { phrase: "I'M CONFUSED", class: "", icon: "😕" },
-          { phrase: "I'M FRUSTRATED", class: "", icon: "😒" }
+          {
+            phrase: "ANGRY",
+            class: "",
+            icon: "😠",
+            speak: debounce(
+              () => {
+                speak("I'm angry")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "SAD",
+            class: "",
+            icon: "😔",
+            pronounce: "I'm Sad",
+            speak: debounce(
+              () => {
+                speak("I'm sad")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "CONFUSED",
+            class: "",
+            icon: "😕",
+            speak: debounce(
+              () => {
+                speak("I'm confused")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "FRUSTRATED",
+            class: "",
+            icon: "😒",
+            speak: debounce(
+              () => {
+                speak("I'm frustrated")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       }
     ]
@@ -237,7 +743,4 @@ const groups = [
   }
 ]
 
-module.exports = {
-  // phrases,
-  groups
-}
+export default groups

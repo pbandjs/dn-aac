@@ -1,3 +1,8 @@
+html,
+body {
+  /* cursor: url("mouse2.png"); */
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -15,7 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.3vw;
+  font-size: 2vw;
 }
 
 #root {
@@ -23,6 +28,7 @@ body {
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
+
   --green-100: #eefbf3;
   --green-400: #96e6b3;
   --green-800: #39d070;
@@ -45,6 +51,7 @@ body {
 
   --text-light: #ffffff;
   --text-dark: #000000;
+  /* cursor: url("/mouse.png"), auto; */
 }
 
 code {

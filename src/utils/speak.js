@@ -1,4 +1,5 @@
 function speak(phrase) {
+  console.log("speaking phrase:", phrase)
   const synth = window.speechSynthesis
   const voices = synth.getVoices()
   // console.log(voices)

@@ -3,6 +3,7 @@
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
+  cursor: url(cursor.png) 0 0, auto;
 }
 
 .dark-text {

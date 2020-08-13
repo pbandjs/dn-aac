@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: 254px 1fr;
   grid-template-rows: 100%;
+  /* cursor: url("/mouse.png"), auto; */
 }
 
 .Home .Tabs {
@@ -46,7 +47,7 @@
 }
 
 .Home .Tabs .Tab:hover {
-  cursor: pointer;
+  /* cursor: url(pointer.png), pointer; */
 }
 
 .Home .Main {
@@ -118,7 +119,7 @@
 }
 
 .Home .Main .speak-composed .speak-composed-button:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
   background: #dee1e4;
 }
 
@@ -144,7 +145,7 @@
 }
 
 .Home .Main .clear-composed:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 /* .Home .Main .Column {
@@ -238,7 +239,7 @@
 }
 
 .Home .Main .Row .Cell .Card:hover {
-  cursor: pointer;
+  /* cursor: url(pointer.png), pointer; */
   /* background: whitesmoke; */
 }
 
