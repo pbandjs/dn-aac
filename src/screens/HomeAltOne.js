@@ -1,29 +1,33 @@
 import React, { useState, useRef, useEffect } from "react"
 import "../styles/HomeAltOne.css"
 import groups from "../api/builtins"
-// import speak from "../utils/speak"
+import speak from "../utils/speak"
 // import debounce from "../utils/debounce"
-// import debounce from "lodash.debounce"
+import debounce from "lodash.debounce"
 import Twemoji from "react-twemoji"
 
 function HomeAltOne() {
   const [selectedGroupIndex, setSelectedGroupIndex] = useState(0)
   const [composed, setComposed] = useState("")
   const inputRef = useRef()
-  // const debouncedSpeak = useRef(
-  //   debounce(
-  //     phrase => {
-  //       speak(phrase)
-  //     },
-  //     2000,
-  //     { leading: true }
-  //   )
-  // ).current
+  const debouncedSpeak = useRef(
+    debounce(
+      phrase => {
+        speak(phrase)
+      },
+      2000,
+      { leading: true, trailing: false }
+    )
+  ).current
   //
-  // const debouncedCompose = debounce(phrase => {
-  //   setComposed(phrase)
-  //   inputRef.current.focus()
-  // }, 500)
+  const debouncedCompose = debounce(
+    phrase => {
+      setComposed(phrase)
+      inputRef.current.focus()
+    },
+    500,
+    { leading: true, trailing: false }
+  )
 
   const selectedGroup = groups[selectedGroupIndex]
 
@@ -76,7 +80,7 @@ function HomeAltOne() {
         {selectedGroup.mode === "compose" ? (
           <React.Fragment>
             <div key={"Phrase-composed"} className="Row" style={{ height: columnHeight + "%" }}>
-              <div
+              {/*<div
                 className="clear-composed"
                 onClick={() => {
                   setComposed("")
@@ -85,7 +89,7 @@ function HomeAltOne() {
                 <Twemoji options={{ className: "emoji" }}>
                   <span>✖️</span>
                 </Twemoji>
-              </div>
+              </div>*/}
 
               <div
                 className="composed-phrase"
@@ -100,11 +104,11 @@ function HomeAltOne() {
                 <div
                   className="speak-composed-button"
                   onClick={e => {
-                    // debouncedSpeak(composed.toLowerCase())
+                    debouncedSpeak(composed.toLowerCase())
                   }}
                   onContextMenu={e => {
                     e.preventDefault()
-                    // debouncedSpeak(composed.toLowerCase())
+                    debouncedSpeak(composed.toLowerCase())
                   }}
                 >
                   <Twemoji options={{ className: "emoji" }}>
@@ -117,16 +121,16 @@ function HomeAltOne() {
             {selectedGroup.phraseGroups.map((phraseGroup, i) => (
               <div key={"Phrase-" + i} className="Row" style={{ height: columnHeight + "%" }}>
                 {phraseGroup.phrases.map((phrase, j) => (
-                  <div key={"Phrase-" + j} className={"Cell"} style={{ width: columnWidth + "%" }}>
+                  <div key={"Phrase-" + j} className={"Cell"} style={{ width: columnWidth * (phrase.weight || 1) + "%" }}>
                     <div
                       className={"Card " + (phrase.isDummy ? "dummy " : "") + (phrase.class || phraseGroup.class) || ""}
                       onClick={e => {
                         e.preventDefault()
-                        // debouncedCompose(phrase.value ? phrase.value(composed) : composed + phrase.phrase)
+                        debouncedCompose(phrase.value ? phrase.value(composed) : composed + phrase.phrase)
                       }}
                       onContextMenu={e => {
                         e.preventDefault()
-                        // debouncedCompose(phrase.value ? phrase.value(composed) : composed + phrase.phrase)
+                        debouncedCompose(phrase.value ? phrase.value(composed) : composed + phrase.phrase)
                       }}
                     >
                       {!!phrase.icon && (
@@ -146,7 +150,7 @@ function HomeAltOne() {
             {selectedGroup.phraseGroups.map((phraseGroup, i) => (
               <div key={"Phrase-" + i} className="Row" style={{ height: columnHeight + "%" }}>
                 {phraseGroup.phrases.map((phrase, j) => (
-                  <div key={"Phrase-" + j} className="Cell" style={{ width: columnWidth + "%" }}>
+                  <div key={"Phrase-" + j} className="Cell" style={{ width: columnWidth * (phrase.weight || 1) + "%" }}>
                     <div
                       className={"Card " + (phrase.class || phraseGroup.class) || ""}
                       onClick={e => {
@@ -157,6 +161,7 @@ function HomeAltOne() {
                       }}
                       onContextMenu={e => {
                         e.preventDefault()
+                        phrase.speak()
                         // debouncedSpeak(phrase.pronounce || phrase.phrase)
                       }}
                     >

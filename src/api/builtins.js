@@ -205,8 +205,20 @@ const groups = [
         class: "border-purple-400 background-purple-100 hover-purple-400",
         phrases: [
           {
+            phrase: "TIKARAM",
+            class: "",
+            pronounce: "Tikaram",
+            speak: debounce(
+              () => {
+                speak("Call Tikaram")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
             phrase: "SAMSON",
-            class: "border-purple-400 background-purple-100 hover-purple-400",
+            class: "border-blue-400 background-blue-100 hover-blue-400",
             speak: debounce(
               () => {
                 speak("Call Samson")
@@ -217,23 +229,11 @@ const groups = [
           },
           {
             phrase: "KISHORI",
-            class: "",
+            class: "border-blue-400 background-blue-100 hover-blue-400",
             pronounce: "Kishohri",
             speak: debounce(
               () => {
-                speak("Call Kishohri")
-              },
-              2500,
-              { leading: true, trailing: false }
-            )
-          },
-          {
-            phrase: "TIKARAM",
-            class: "",
-            pronounce: "Tikaram",
-            speak: debounce(
-              () => {
-                speak("Call Tikaram")
+                speak("Call Key-shore-e")
               },
               2500,
               { leading: true, trailing: false }
@@ -295,7 +295,7 @@ const groups = [
   },
   {
     name: "CONVERSE",
-    tabClass: "dark-text border-blue-400 background-blue-100 hover-blue-400",
+    tabClass: "dark-text border-blue-400 background-blue-100 hover-blue-400 text-med",
     selectedClass: "background-blue-400",
     phraseGroups: [
       {
@@ -654,6 +654,7 @@ const groups = [
             phrase: "FRUSTRATED",
             class: "",
             icon: "😒",
+            weight: 1.2,
             speak: debounce(
               () => {
                 speak("I'm frustrated")
@@ -667,7 +668,7 @@ const groups = [
     ]
   },
   {
-    name: "ALPHABETS",
+    name: "ABC",
     mode: "compose",
     tabClass: "dark-text border-blue-400 background-blue-100 hover-blue-400",
     selectedClass: "background-blue-400",
@@ -675,7 +676,10 @@ const groups = [
       {
         class: "border-green-400 background-green-100 hover-green-400",
         phrases: [
-          { phrase: "A", class: "" },
+          {
+            phrase: "A",
+            class: ""
+          },
           { phrase: "B", class: "" },
           { phrase: "C", class: "" },
           { phrase: "D", class: "" },
@@ -721,21 +725,20 @@ const groups = [
         phrases: [
           { phrase: "Y", class: "" },
           { phrase: "Z", class: "" },
-          { phrase: ",", class: "" },
           {
             phrase: "SPACE",
             value: phrase => {
               return phrase + " "
             },
-            class: ""
+            class: "",
+            weight: 3
           },
-          { phrase: "", class: "", isDummy: true },
           {
-            phrase: "BACKSPACE",
+            phrase: "DELETE",
             value: phrase => {
-              return phrase.slice(0, phrase.length - 1)
+              return ""
             },
-            class: ""
+            class: "border-red-400 background-red-100 hover-red-400"
           }
         ]
       }
