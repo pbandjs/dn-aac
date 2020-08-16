@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState } from "react"
 import "../styles/HomeAltOne.css"
 import groups from "../api/builtins"
 import speak from "../utils/speak"
@@ -9,25 +9,37 @@ import Twemoji from "react-twemoji"
 function HomeAltOne() {
   const [selectedGroupIndex, setSelectedGroupIndex] = useState(0)
   const [composed, setComposed] = useState("")
-  const inputRef = useRef()
-  const debouncedSpeak = useRef(
-    debounce(
-      phrase => {
-        speak(phrase)
-      },
-      2000,
-      { leading: true, trailing: false }
-    )
-  ).current
-  //
-  const debouncedCompose = debounce(
-    phrase => {
-      setComposed(phrase)
-      inputRef.current.focus()
+  const debouncedSpeak = debounce(
+    () => {
+      speak(composed)
     },
-    500,
+    2500,
     { leading: true, trailing: false }
   )
+  // const debouncedSpeak = useRef(
+  //   debounce(
+  //     phrase => {
+  //       speak(phrase)
+  //     },
+  //     2000,
+  //     { leading: true, trailing: false }
+  //   )
+  // ).current
+  // //
+  // const debouncedCompose = debounce(
+  //   phrase => {
+  //     setComposed(phrase)
+  //     inputRef.current.focus()
+  //   },
+  //   500,
+  //   { leading: true, trailing: false }
+  // )
+
+  // const setComposition = phrase => {
+  //   console.log("X")
+  //   // setComposed(composed + phrase)
+  //   inputRef.current.value = inputRef.current.value + phrase
+  // }
 
   const selectedGroup = groups[selectedGroupIndex]
 
@@ -47,12 +59,12 @@ function HomeAltOne() {
   const columnHeight = 100 / groupHeight
   // console.log(columnWidth)
 
-  useEffect(
-    () => {
-      inputRef.current && inputRef.current.focus()
-    },
-    [inputRef]
-  )
+  // useEffect(
+  //   () => {
+  //     inputRef.current && inputRef.current.focus()
+  //   },
+  //   [inputRef]
+  // )
 
   return (
     <div className="Home">
@@ -94,21 +106,30 @@ function HomeAltOne() {
               <div
                 className="composed-phrase"
                 onClick={() => {
-                  setComposed("")
+                  // setComposed("")
                 }}
               >
-                <input type="text" value={composed} ref={inputRef} />
+                <div className="input">{composed}</div>
+                {/*<input
+                  type="text"
+                  value={composed}
+                  ref={inputRef}
+                  onFocus={e => {
+                    e.preventDefault()
+                  }}
+                />*/}
               </div>
 
               <div className="speak-composed">
                 <div
                   className="speak-composed-button"
                   onClick={e => {
-                    debouncedSpeak(composed.toLowerCase())
+                    // debounce()
+                    debouncedSpeak()
                   }}
                   onContextMenu={e => {
                     e.preventDefault()
-                    debouncedSpeak(composed.toLowerCase())
+                    debouncedSpeak()
                   }}
                 >
                   <Twemoji options={{ className: "emoji" }}>
@@ -126,11 +147,11 @@ function HomeAltOne() {
                       className={"Card " + (phrase.isDummy ? "dummy " : "") + (phrase.class || phraseGroup.class) || ""}
                       onClick={e => {
                         e.preventDefault()
-                        debouncedCompose(phrase.value ? phrase.value(composed) : composed + phrase.phrase)
+                        phrase.compose(composed, setComposed)
                       }}
                       onContextMenu={e => {
                         e.preventDefault()
-                        debouncedCompose(phrase.value ? phrase.value(composed) : composed + phrase.phrase)
+                        phrase.compose(composed, setComposed)
                       }}
                     >
                       {!!phrase.icon && (

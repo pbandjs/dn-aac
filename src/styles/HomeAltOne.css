@@ -40,7 +40,7 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   border-radius: 4px;
-  font-family: "Helvetica";
+  font-family: "Inter", Fallback, sans-serif;
   height: 100%;
   box-sizing: border-box;
   transition: all 0.2s ease-out;
@@ -89,19 +89,25 @@
   font-weight: 600;
 }
 
-.Home .Main .composed-phrase input {
+.Home .Main .composed-phrase .input {
   height: 100%;
   font-size: 3vw;
-  font-weight: 600;
+  font-family: "Inter", Fallback, sans-serif;
+  /* font-weight: 00; */
   width: 100%;
   border: none;
   outline: none;
   background: transparent;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
 }
 
-.Home .Main .composed-phrase input:hover {
+/* .Home .Main .composed-phrase input:hover {
   cursor: url(cursor.png) 0 0, auto;
-}
+} */
 
 .Home .Main .speak-composed {
   /* width: 100%; */

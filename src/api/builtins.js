@@ -678,67 +678,338 @@ const groups = [
         phrases: [
           {
             phrase: "A",
-            class: ""
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "A")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
           },
-          { phrase: "B", class: "" },
-          { phrase: "C", class: "" },
-          { phrase: "D", class: "" },
-          { phrase: "E", class: "" },
-          { phrase: "F", class: "" }
+          {
+            phrase: "B",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "B")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "C",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "C")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "D",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "D")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "E",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "E")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "F",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "F")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
         phrases: [
-          { phrase: "G", class: "" },
-          { phrase: "H", class: "" },
-          { phrase: "I", class: "" },
-          { phrase: "J", class: "" },
-          { phrase: "K", class: "" },
-          { phrase: "L", class: "" }
+          {
+            phrase: "G",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "G")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "H",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "H")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "I",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "I")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "J",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "J")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "K",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "K")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "L",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "L")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
         phrases: [
-          { phrase: "M", class: "" },
-          { phrase: "N", class: "" },
-          { phrase: "O", class: "" },
-          { phrase: "P", class: "" },
-          { phrase: "Q", class: "" },
-          { phrase: "R", class: "" }
+          {
+            phrase: "M",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "M")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "N",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "N")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "O",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "O")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "P",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "P")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "Q",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "Q")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "R",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "R")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
         phrases: [
-          { phrase: "S", class: "" },
-          { phrase: "T", class: "" },
-          { phrase: "U", class: "" },
-          { phrase: "V", class: "" },
-          { phrase: "W", class: "" },
-          { phrase: "X", class: "" }
+          {
+            phrase: "S",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "S")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "T",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "T")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "U",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "U")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "V",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "V")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "W",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "W")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "X",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "X")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          }
         ]
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
         phrases: [
-          { phrase: "Y", class: "" },
-          { phrase: "Z", class: "" },
+          {
+            phrase: "Y",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "Y")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
+          {
+            phrase: "Z",
+            class: "",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + "Z")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
+          },
           {
             phrase: "SPACE",
             value: phrase => {
               return phrase + " "
             },
             class: "",
-            weight: 3
+            weight: 3,
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed(composed + " ")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
           },
           {
             phrase: "DELETE",
             value: phrase => {
               return ""
             },
-            class: "border-red-400 background-red-100 hover-red-400"
+            class: "border-red-400 background-red-100 hover-red-400",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed("")
+              },
+              2500,
+              { leading: true, trailing: false }
+            )
           }
         ]
       }

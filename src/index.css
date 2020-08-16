@@ -31,6 +31,10 @@ body {
   body .Tab {
     font-size: 2vw;
   }
+
+  body .Home .Main .composed-phrase .input {
+    font-size: 3rem;
+  }
 }
 
 #root {
