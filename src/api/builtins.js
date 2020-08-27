@@ -1,5 +1,5 @@
-import speak from "../utils/speak"
-import debounce from "lodash.debounce"
+import speak from "../utils/speak";
+import debounce from "lodash.debounce";
 // const colors = {
 //   blue: {
 //     "100": "#99D6FF",
@@ -54,11 +54,11 @@ const groups = [
             class: "",
             speak: debounce(
               () => {
-                speak("Call Maya")
+                speak("Call Maya");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "MANJU",
@@ -66,11 +66,11 @@ const groups = [
             pronounce: "Muhnjew",
             speak: debounce(
               () => {
-                speak("Call Muhnjew")
+                speak("Call Muhnjew");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "RAMNI",
@@ -78,11 +78,11 @@ const groups = [
             pronounce: "Rum-knee",
             speak: debounce(
               () => {
-                speak("Call Rumknee")
+                speak("Call Rumknee");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "LALIT",
@@ -90,13 +90,13 @@ const groups = [
             pronounce: "Lahlith",
             speak: debounce(
               () => {
-                speak("Call Lahlith")
+                speak("Call Lahlith");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
@@ -106,11 +106,11 @@ const groups = [
             class: "",
             speak: debounce(
               () => {
-                speak("Call Sunder")
+                speak("Call Sunder");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "MURUGAN",
@@ -118,22 +118,22 @@ const groups = [
             pronounce: "Mooroogan",
             speak: debounce(
               () => {
-                speak("Call Moorugan")
+                speak("Call Moorugan");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "KAMAL",
             class: "",
             speak: debounce(
               () => {
-                speak("Call Kamal")
+                speak("Call Kamal");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "BJ",
@@ -141,13 +141,13 @@ const groups = [
             pronounce: "Bejay",
             speak: debounce(
               () => {
-                speak("Call BJ")
+                speak("Call BJ");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
@@ -158,22 +158,22 @@ const groups = [
             pronounce: "Subhash",
             speak: debounce(
               () => {
-                speak("Call Subhash")
+                speak("Call Subhash");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "PINKY",
             class: "",
             speak: debounce(
               () => {
-                speak("Call Pinky")
+                speak("Call Pinky");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "SUSHILA",
@@ -181,11 +181,11 @@ const groups = [
             pronounce: "Sosheela",
             speak: debounce(
               () => {
-                speak("Call Sosheela")
+                speak("Call Sosheela");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "DUBEY",
@@ -193,13 +193,13 @@ const groups = [
             pronounce: "Dubay",
             speak: debounce(
               () => {
-                speak("Call Dubay")
+                speak("Call Dubay");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-purple-400 background-purple-100 hover-purple-400",
@@ -210,22 +210,22 @@ const groups = [
             pronounce: "Tikaram",
             speak: debounce(
               () => {
-                speak("Call Tikaram")
+                speak("Call Tikaram");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "SAMSON",
             class: "border-blue-400 background-blue-100 hover-blue-400",
             speak: debounce(
               () => {
-                speak("Call Samson")
+                speak("Call Samson");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "KISHORI",
@@ -233,11 +233,11 @@ const groups = [
             pronounce: "Kishohri",
             speak: debounce(
               () => {
-                speak("Call Key-shore-e")
+                speak("Call Key-shore-e");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
 
           {
@@ -245,13 +245,13 @@ const groups = [
             class: "border-red-400 background-red-100 hover-red-400",
             speak: debounce(
               () => {
-                speak("Call Duke")
+                speak("Call Duke");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-red-400 background-red-100 hover-red-400",
@@ -261,41 +261,42 @@ const groups = [
             class: "",
             speak: debounce(
               () => {
-                speak("Call Sunshine")
+                speak("Call Sunshine");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "DOLLY",
             class: "",
             speak: debounce(
               () => {
-                speak("Call Dolly")
+                speak("Call Dolly");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "BILLY",
             class: "",
             speak: debounce(
               () => {
-                speak("Call Billy")
+                speak("Call Billy");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
-      }
-    ]
+            ),
+          },
+        ],
+      },
+    ],
   },
   {
     name: "CONVERSE",
-    tabClass: "dark-text border-blue-400 background-blue-100 hover-blue-400 text-med",
+    tabClass:
+      "dark-text border-blue-400 background-blue-100 hover-blue-400 text-med",
     selectedClass: "background-blue-400",
     phraseGroups: [
       {
@@ -306,35 +307,35 @@ const groups = [
             class: "",
             speak: debounce(
               () => {
-                speak("Hey")
+                speak("Hey");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "WHAT'S UP?",
             class: "",
             speak: debounce(
               () => {
-                speak("What's up?")
+                speak("What's up?");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "HOW ARE YOU?",
             class: "",
             speak: debounce(
               () => {
-                speak("How are you?")
+                speak("How are you?");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
@@ -344,46 +345,46 @@ const groups = [
             class: "",
             speak: debounce(
               () => {
-                speak("What's the news?")
+                speak("What's the news?");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "HOW'S FAMILY?",
             class: "",
             speak: debounce(
               () => {
-                speak("How's family?")
+                speak("How's family?");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "HOW'S WORK?",
             class: "",
             speak: debounce(
               () => {
-                speak("How's work?")
+                speak("How's work?");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "HOW'S SCHOOL?",
             class: "",
             speak: debounce(
               () => {
-                speak("How's school?")
+                speak("How's school?");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
@@ -393,46 +394,46 @@ const groups = [
             class: "",
             speak: debounce(
               () => {
-                speak("How's the weather?")
+                speak("How's the weather?");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "LET'S SIT OUTSIDE",
             class: "",
             speak: debounce(
               () => {
-                speak("Let's sit outside")
+                speak("Let's sit outside");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "WHAT WOULD YOU LIKE TO HAVE?",
             class: "",
             speak: debounce(
               () => {
-                speak("What would you like to have?")
+                speak("What would you like to have?");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "THE TREE IS IN BLOOM",
             class: "",
             speak: debounce(
               () => {
-                speak("The tree is in bloom")
+                speak("The tree is in bloom");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-red-400 background-red-100 hover-red-400",
@@ -443,37 +444,37 @@ const groups = [
             pronounce: "Bye, Take Care",
             speak: debounce(
               () => {
-                speak("Bye, take care")
+                speak("Bye, take care");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "COME AGAIN",
             class: "",
             speak: debounce(
               () => {
-                speak("Come Again")
+                speak("Come Again");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "GOOD NIGHT",
             class: "",
             speak: debounce(
               () => {
-                speak("Good Night")
+                speak("Good Night");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
-      }
-    ]
+            ),
+          },
+        ],
+      },
+    ],
   },
   {
     name: "FEEL",
@@ -489,11 +490,11 @@ const groups = [
             icon: "😀",
             speak: debounce(
               () => {
-                speak("I'm happy")
+                speak("I'm happy");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "GOOD",
@@ -501,11 +502,11 @@ const groups = [
             icon: "🙂",
             speak: debounce(
               () => {
-                speak("I'm good")
+                speak("I'm good");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "COOL",
@@ -513,11 +514,11 @@ const groups = [
             icon: "😎",
             speak: debounce(
               () => {
-                speak("Cool")
+                speak("Cool");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "EXCITED",
@@ -525,11 +526,11 @@ const groups = [
             icon: "😄",
             speak: debounce(
               () => {
-                speak("I'm excited")
+                speak("I'm excited");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "FINE",
@@ -537,13 +538,13 @@ const groups = [
             class: "",
             speak: debounce(
               () => {
-                speak("I'm fine")
+                speak("I'm fine");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-yellow-400 background-yellow-100 hover-yellow-400",
@@ -554,11 +555,11 @@ const groups = [
             icon: "🍽️",
             speak: debounce(
               () => {
-                speak("I'm hungry")
+                speak("I'm hungry");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "PAIN",
@@ -566,11 +567,11 @@ const groups = [
             icon: "🤕",
             speak: debounce(
               () => {
-                speak("I'm in pain")
+                speak("I'm in pain");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "TIRED",
@@ -578,11 +579,11 @@ const groups = [
             icon: "😫",
             speak: debounce(
               () => {
-                speak("I'm tired")
+                speak("I'm tired");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "SLEEPY",
@@ -590,11 +591,11 @@ const groups = [
             icon: "😴",
             speak: debounce(
               () => {
-                speak("I'm sleepy")
+                speak("I'm sleepy");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "ITCHY",
@@ -602,13 +603,13 @@ const groups = [
             icon: "🖐️",
             speak: debounce(
               () => {
-                speak("I'm itchy")
+                speak("I'm itchy");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-red-400 background-red-100 hover-red-400",
@@ -619,11 +620,11 @@ const groups = [
             icon: "😠",
             speak: debounce(
               () => {
-                speak("I'm angry")
+                speak("I'm angry");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "SAD",
@@ -632,11 +633,11 @@ const groups = [
             pronounce: "I'm Sad",
             speak: debounce(
               () => {
-                speak("I'm sad")
+                speak("I'm sad");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "CONFUSED",
@@ -644,11 +645,11 @@ const groups = [
             icon: "😕",
             speak: debounce(
               () => {
-                speak("I'm confused")
+                speak("I'm confused");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "FRUSTRATED",
@@ -657,15 +658,15 @@ const groups = [
             weight: 1.2,
             speak: debounce(
               () => {
-                speak("I'm frustrated")
+                speak("I'm frustrated");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
-      }
-    ]
+            ),
+          },
+        ],
+      },
+    ],
   },
   {
     name: "ABC",
@@ -681,68 +682,68 @@ const groups = [
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "A")
+                setComposed(composed + "A");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "B",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "B")
+                setComposed(composed + "B");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "C",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "C")
+                setComposed(composed + "C");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "D",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "D")
+                setComposed(composed + "D");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "E",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "E")
+                setComposed(composed + "E");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "F",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "F")
+                setComposed(composed + "F");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
@@ -752,68 +753,68 @@ const groups = [
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "G")
+                setComposed(composed + "G");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "H",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "H")
+                setComposed(composed + "H");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "I",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "I")
+                setComposed(composed + "I");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "J",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "J")
+                setComposed(composed + "J");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "K",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "K")
+                setComposed(composed + "K");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "L",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "L")
+                setComposed(composed + "L");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
@@ -823,68 +824,68 @@ const groups = [
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "M")
+                setComposed(composed + "M");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "N",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "N")
+                setComposed(composed + "N");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "O",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "O")
+                setComposed(composed + "O");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "P",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "P")
+                setComposed(composed + "P");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "Q",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "Q")
+                setComposed(composed + "Q");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "R",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "R")
+                setComposed(composed + "R");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
@@ -894,68 +895,68 @@ const groups = [
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "S")
+                setComposed(composed + "S");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "T",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "T")
+                setComposed(composed + "T");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "U",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "U")
+                setComposed(composed + "U");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "V",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "V")
+                setComposed(composed + "V");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "W",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "W")
+                setComposed(composed + "W");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "X",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "X")
+                setComposed(composed + "X");
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
+            ),
+          },
+        ],
       },
       {
         class: "border-green-400 background-green-100 hover-green-400",
@@ -965,56 +966,56 @@ const groups = [
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "Y")
+                setComposed(composed + "Y");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "Z",
             class: "",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + "Z")
+                setComposed(composed + "Z");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "SPACE",
-            value: phrase => {
-              return phrase + " "
+            value: (phrase) => {
+              return phrase + " ";
             },
             class: "",
             weight: 3,
             compose: debounce(
               (composed, setComposed) => {
-                setComposed(composed + " ")
+                setComposed(composed + " ");
               },
               2500,
               { leading: true, trailing: false }
-            )
+            ),
           },
           {
             phrase: "DELETE",
-            value: phrase => {
-              return ""
+            value: (phrase) => {
+              return "";
             },
             class: "border-red-400 background-red-100 hover-red-400",
             compose: debounce(
               (composed, setComposed) => {
-                setComposed("")
+                setComposed(composed.slice(0, composed.length - 1));
               },
               2500,
               { leading: true, trailing: false }
-            )
-          }
-        ]
-      }
-    ]
-  }
-]
+            ),
+          },
+        ],
+      },
+    ],
+  },
+];
 
-export default groups
+export default groups;
