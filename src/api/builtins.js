@@ -984,12 +984,26 @@ const groups = [
             ),
           },
           {
+            phrase: "CLEAR",
+            value: (phrase) => {
+              return "";
+            },
+            class: "border-red-400 background-red-100 hover-red-400",
+            compose: debounce(
+              (composed, setComposed) => {
+                setComposed("");
+              },
+              1000,
+              { leading: true, trailing: false }
+            ),
+          },
+          {
             phrase: "SPACE",
             value: (phrase) => {
               return phrase + " ";
             },
             class: "",
-            weight: 3,
+            weight: 2,
             compose: debounce(
               (composed, setComposed) => {
                 setComposed(composed + " ");
@@ -1008,7 +1022,7 @@ const groups = [
               (composed, setComposed) => {
                 setComposed(composed.slice(0, composed.length - 1));
               },
-              2500,
+              1000,
               { leading: true, trailing: false }
             ),
           },
